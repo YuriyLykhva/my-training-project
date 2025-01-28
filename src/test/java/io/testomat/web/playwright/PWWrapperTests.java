@@ -34,9 +34,8 @@ public class PWWrapperTests {
         PlaywrightWrapper.open("/users/sign_in");
         loginPage
                 .isLoaded()
-//                .loginUser("mmax68955@gmail.com", "d#6m@$MnPzEyg7Z");
-//                .loginUser("yu1.0710@yopmail.com", "ZSx5EN!FHFvrubH");
-                .loginUser(LoginPage.CredsWithRoles.YUKO);
+//                .loginUser("ceivoyacabrau-4233@yopmail.com", "mag7q4s86@AXK5K");
+                .loginUser(LoginPage.CredsWithRoles.USER1);
 
         new ProjectsPagePW()
                 .isLoaded()

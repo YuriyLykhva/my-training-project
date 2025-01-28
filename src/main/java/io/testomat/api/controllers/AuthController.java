@@ -8,8 +8,8 @@ public class AuthController extends BaseController<AuthController> {
         return baseClient()
                 .contentType(ContentType.URLENC)
                 .formParams(
-                        "email", "yu1.0710@yopmail.com",
-                        "password", "ZSx5EN!FHFvrubH"
+                        "email", "ceivoyacabrau-4233@yopmail.com",
+                        "password", "mag7q4s86@AXK5K"
                 )
                 .post("/login")
                 .as(LoginDto.class);

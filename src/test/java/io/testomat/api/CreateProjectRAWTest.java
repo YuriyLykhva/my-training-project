@@ -11,8 +11,6 @@ public class CreateProjectRAWTest {
     @DisplayName("Login user and create project")
     void loginUserAndCreateProject() {
 
-        String projectName = "garden-grocery";
-
         var testomatSpecification = RestAssured.given()
                 .baseUri("https://app.testomat.io")
                 .log().all()
@@ -20,13 +18,15 @@ public class CreateProjectRAWTest {
 
         String token = testomatSpecification
                 .formParams(
-                        "email", "yu1.0710@yopmail.com",
-                        "password", "ZSx5EN!FHFvrubH"
+                        "email", "ceivoyacabrau-4233@yopmail.com",
+                        "password", "mag7q4s86@AXK5K"
                 )
                 .post("/login")//   це з документації
                 .prettyPeek()
                 .jsonPath()
                 .getString("jwt");
+
+        System.out.println("jwt token = " + token);
 
  /*       testomatSpecification           ======================= цей метод не дозволений для testomat.io
                 .header("Authorization", token)
@@ -41,7 +41,6 @@ public class CreateProjectRAWTest {
   */
         List<String> projectID = testomatSpecification
                 .header("Authorization", token)
-//                .get("/{projectName}/suites", projectName)
                 .get("/projects")
                 .jsonPath()
                 .getList("data.id");
@@ -51,9 +50,9 @@ public class CreateProjectRAWTest {
             System.out.println("  Project name: " + s);
         }
 
-//        testomatSpecification
-//                .get("/{projectName}/suites", projectID.get(9))
-//                .prettyPrint();
+        testomatSpecification
+                .get("/{projectName}/suites", projectID.get(1))
+                .prettyPrint();
 
     }
 

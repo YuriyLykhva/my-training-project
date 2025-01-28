@@ -52,7 +52,8 @@ public class LoginPage extends BasePage {
     public enum CredsWithRoles {
 
         MANAGER("mmax68955@gmail.com", "d#6m@$MnPzEyg7Z"),
-        YUKO("yu1.0710@yopmail.com", "ZSx5EN!FHFvrubH");
+        YUKO("yu1.0710@yopmail.com", "ZSx5EN!FHFvrubH"),
+        USER1("ceivoyacabrau-4233@yopmail.com", "mag7q4s86@AXK5K");
 
         public final String mail;
         public final String password;
@@ -64,7 +65,7 @@ public class LoginPage extends BasePage {
     @Getter
     public enum CredsWithRolesAnother {
 
-        MANAGER(new Creds("mmax68955@gmail.com", "d#6m@$MnPzEyg7Z"));
+        USER1(new Creds("ceivoyacabrau-4233@yopmail.com", "mag7q4s86@AXK5K"));
 
         private final Creds creds;
 

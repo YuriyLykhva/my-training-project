@@ -43,9 +43,9 @@ public class PWRawTests {
         PlaywrightAssertions.assertThat(page.locator("#content-desktop #new_user")).isVisible(
                 new LocatorAssertions.IsVisibleOptions().setTimeout(20000));
 
-        page.locator("#content-desktop #user_email").first().fill("yu1.0710@yopmail.com");
+        page.locator("#content-desktop #user_email").first().fill("ceivoyacabrau-4233@yopmail.com");
         Locator passwordField = page.locator("#content-desktop #user_password");
-        passwordField.fill("ZSx5EN!FHFvrubH");
+        passwordField.fill("mag7q4s86@AXK5K");
         passwordField.press("Enter");
 
         isHidden(passwordField);

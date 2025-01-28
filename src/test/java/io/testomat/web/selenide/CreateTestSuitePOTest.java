@@ -32,9 +32,8 @@ public class CreateTestSuitePOTest {
         open("/users/sign_in");
         loginPage
                 .isLoaded()
-//                .loginUser("mmax68955@gmail.com", "d#6m@$MnPzEyg7Z");
-//                .loginUser("yu1.0710@yopmail.com", "ZSx5EN!FHFvrubH");
-                .loginUser(YUKO);
+//                .loginUser("ceivoyacabrau-4233@yopmail.com", "mag7q4s86@AXK5K");
+                .loginUser(USER1);
 
         new ProjectsPage()
                 .isLoaded()

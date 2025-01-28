@@ -19,13 +19,13 @@ public class CreateTestSuiteTests {
     @DisplayName("Test name")
     void testName() {
 
-        String jwtToken = new AuthController().loginUser("yu1.0710@yopmail.com", "ZSx5EN!FHFvrubH").getJwt();
+        String jwtToken = new AuthController().loginUser("ceivoyacabrau-4233@yopmail.com", "mag7q4s86@AXK5K").getJwt();
 
         var projectTitle = ((ProjectsDto) new ProjectController()
                 .withToken(jwtToken)
                 .getAllProjects()
                 .toObject())
-                .getData().get(8).getAttributes()
+                .getData().get(2).getAttributes()
                 .getTitle().toLowerCase();
 
         var suitesController = new SuitesController().withToken(jwtToken);
